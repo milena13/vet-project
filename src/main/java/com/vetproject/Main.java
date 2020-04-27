@@ -4,41 +4,31 @@ public class Main {
 
     public static void main(String []args) {
 
-    Catita petNumberOneM = new Catita("Milena");
+    Dog missy = new Dog();
 
-    petNumberOneM.setPetName("Catita");
-    petNumberOneM.setAge(3);
-    petNumberOneM.setAnimalType("Dog");
-    petNumberOneM.setBreed("Bichon Maltese");
+    missy.setName("Missy");
+    System.out.println("Name: " + missy.getName());
 
-    Porumbica petNumberTwoM = new Porumbica("Milena");
+    missy.setBreed("Yorshire Terrier");
+    System.out.println("Breed: " + missy.getBreed());
 
-    petNumberTwoM.setPetName("Porumbica");
-    petNumberTwoM.setAge(1);
-    petNumberTwoM.setAnimalType("Bird");
-    petNumberTwoM.setBreed("Pigeon");
+    missy.setAge(9);
+    System.out.println("Age: " + missy.getAge());
 
-    Missy petNumberThreeM = new Missy("Milena");
+    missy.setSize("Small");
+    System.out.println("Size: " + missy.getSize());
 
-    petNumberThreeM.setPetName("Missy");
-    petNumberThreeM.setAge(9);
-    petNumberThreeM.setAnimalType("Dog");
-    petNumberThreeM.setBreed("Yorkshire Terrier");
+    missy.setFur("Short and brown");
+    System.out.println("Fur: " + missy.getFur());
 
-    Culita petNumberOneL = new Culita("Lucian");
+    Cat izzy = new Cat();
 
-    petNumberOneL.setPetName("Culita");
-    petNumberOneL.setAge(4);
-    petNumberOneL.setAnimalType("Dog");
-    petNumberOneL.setBreed("Bichon Maltese");
+    Bird tweety = new Bird();
 
-    Liza petNumberTwoL = new Liza("Lucian");
+    Reptile lizzy = new Reptile();
 
-    petNumberTwoL.setPetName("Liza");
-    petNumberTwoL.setAge(4);
-    petNumberTwoL.setAnimalType("Dog");
-    petNumberTwoL.setBreed("Bichon Frise");
-
+    lizzy.setEcosystem("Desert");
+    System.out.println("Lizzy is a reptile and it's ecosystem is: " + lizzy.getEcosystem());
 
     }
 }
