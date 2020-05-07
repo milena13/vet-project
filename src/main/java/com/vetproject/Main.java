@@ -1,8 +1,18 @@
 package com.vetproject;
 
+import com.vetproject.entity.Dog;
+import com.vetproject.entity.Owner;
+
 public class Main {
 
     public static void main(String []args) {
+
+    Owner milena = new Owner();
+   // milena.setOwnerId();
+    milena.setName("Milena Mandru");
+
+    Owner john = new Owner();
+    john.setName("John Doe");
 
     Dog missy = new Dog();
 
@@ -21,14 +31,6 @@ public class Main {
     missy.setFur("Short and brown");
     System.out.println("Fur: " + missy.getFur());
 
-    Cat izzy = new Cat();
-
-    Bird tweety = new Bird();
-
-    Reptile lizzy = new Reptile();
-
-    lizzy.setEcosystem("Desert");
-    System.out.println("Lizzy is a reptile and it's ecosystem is: " + lizzy.getEcosystem());
 
     }
 }

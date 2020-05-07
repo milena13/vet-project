@@ -1,17 +1,15 @@
-package com.vetproject;
+package com.vetproject.entity;
 
-import java.io.Serializable;
-import java.util.Set;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "ANIMAL")
-abstract class Animal {
+public abstract class Animal {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Owner ownerId;
+    private long animalId;
 
     @Column(name = "animal_name")
     private String name;
@@ -26,19 +24,19 @@ abstract class Animal {
     public Animal() {
     }
 
-    public Animal(Owner ownerId, String name, String breed, int age) {
-        this.ownerId = ownerId;
+    public Animal(long animalId, String name, String breed, int age) {
+        this.animalId = animalId;
         this.name = name;
         this.breed = breed;
         this.age = age;
     }
 
-    public Owner getOwnerId() {
-        return ownerId;
+    public long getOwnerId() {
+        return animalId;
     }
 
-    public void setOwnerId(Owner ownerId) {
-        this.ownerId = ownerId;
+    public void setOwnerId(long animalId) {
+        this.animalId = animalId;
     }
 
     public String getName() {
