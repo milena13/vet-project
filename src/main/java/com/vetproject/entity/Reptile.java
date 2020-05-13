@@ -5,13 +5,13 @@ import com.vetproject.entity.Animal;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "REPTILE")
+@Table(name = "reptile")
 public class Reptile extends Animal {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "reptile_id")
-    private long reptileId;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @Column(name = "reptile_id")
+//    private long reptileId;
 
     @Column(name = "food_preference")
     private String foodPreference;
@@ -19,9 +19,9 @@ public class Reptile extends Animal {
     @Column(name = "reptile_ecosystem")
     private String ecosystem;
 
-    public long getReptileId() {return reptileId;}
-
-    public void setReptileId(long reptileId) {this.reptileId = reptileId;}
+//    public long getReptileId() {return reptileId;}
+//
+//    public void setReptileId(long reptileId) {this.reptileId = reptileId;}
 
     public String getFoodPreference() {
         return foodPreference;

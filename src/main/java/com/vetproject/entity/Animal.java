@@ -3,7 +3,8 @@ package com.vetproject.entity;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "ANIMAL")
+@Table(name = "animal")
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class Animal {
 
     @Id

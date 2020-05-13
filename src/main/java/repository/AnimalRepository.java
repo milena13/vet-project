@@ -1,4 +1,4 @@
-package com.vetproject;
+package repository;
 
 import com.vetproject.entity.Animal;
 import org.springframework.data.jpa.repository.JpaRepository;

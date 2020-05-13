@@ -5,12 +5,12 @@ import com.vetproject.entity.Animal;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "DOG")
+@Table(name = "dog")
 public class Dog extends Animal {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private long dogId;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    private long dogId;
 
     @Column(name = "dog_size")
     private String size;
@@ -23,9 +23,9 @@ public class Dog extends Animal {
 
 
 
-    public long getDogId() {return dogId;}
-
-    public void setDogId(long dogId) {this.dogId = dogId;}
+//    public long getDogId() {return dogId;}
+//
+//    public void setDogId(long dogId) {this.dogId = dogId;}
 
     public String getSize() {
         return size;

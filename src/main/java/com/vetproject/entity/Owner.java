@@ -7,18 +7,18 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "OWNER")
+@Table(name = "owner")
 public class Owner {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "Owner_Id")
-    private long ownerId;
-    @Column(name = "Owner_Name")
+    @Column(name = "owner_id")
+    private int ownerId;
+    @Column(name = "owner_name")
     private String name;
-    @Column(name = "E-mail address")
+    @Column(name = "email")
     private String email;
-    @Column(name = "Phone_Number")
+    @Column(name = "phone_number")
     private String phoneNumber;
 
     @OneToMany
@@ -34,7 +34,7 @@ public class Owner {
         return ownerId;
     }
 
-    public void setOwnerId(long ownerId) {
+    public void setOwnerId(int ownerId) {
         this.ownerId = ownerId;
     }
 
